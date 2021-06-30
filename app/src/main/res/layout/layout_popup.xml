@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="25dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/popupTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="More Information"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Place_of_quake"
+                    android:padding="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:layout_below="@id/popupTitle"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/magnitude_in_p"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:layout_below="@id/Place_of_quake"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/status"
+                    android:padding="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:layout_below="@id/magnitude_in_p"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/type"
+                    android:padding="8dp"
+                    android:text=""
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    android:layout_below="@id/status"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title_in_p"
+                    android:padding="8dp"
+                    android:text=""
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    android:layout_below="@id/type"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/formore"
+                    android:padding="8dp"
+                    android:text="For more info click : "
+                    android:layout_marginTop="5dp"
+                    android:textSize="17sp"
+                    android:layout_below="@id/title_in_p"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/link"
+                    android:padding="8dp"
+                    android:text=""
+                    android:autoLink="web"
+                    android:layout_marginTop="7dp"
+                    android:textSize="17sp"
+                    android:layout_below="@id/formore" />
+
+                <Button
+                    android:id="@+id/dismissPopup"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@android:drawable/ic_menu_close_clear_cancel"
+                    android:layout_alignBottom="@id/popupTitle"
+                    android:layout_alignParentRight="true"/>
+
+                <Button
+                    android:id="@+id/dismissPop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/link"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="135dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#DA034B"
+                    android:text="Close"
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>
